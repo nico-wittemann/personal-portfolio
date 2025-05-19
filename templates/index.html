@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="de">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Creative - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Nico Wittemann | Junior Backend-Entwickler</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Tech-Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="hero-name">Nico Wittemann</h1>
+                    <h2 class="hero-title">Junior Backend-Entwickler</h2>
+                    <hr class="divider" />
+                    <p class="text-white-75 mb-5">Ich entwickle APIs und arbeite mit Datenbanken in Python.
+                        Ich lerne schnell, liebe Herausforderungen und entwickle mit Leidenschaft saubere und
+                        performante Backends.</p>
+                    <div>
+                        <a class="btn btn-secondary btn-xl" href="{{ url_for('static', filename='assets/Lebenslauf(Aktualisieren!!!).pdf') }}"
+                            download>Lebenslauf
+                            herunterladen</a>
+                    </div>
+                    <br><br>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/nico-wittemann-8b5737357/"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/Darkchanze" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{{ url_for('static', filename='assets/img/Profilbild3.JPG') }}" alt="Nico Wittemann"
+                        class="img-fluid rounded-circle custom-rounded" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Über mich-->
+    <section class="page-section bg-dark text-white" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Über mich</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">
+                        Ich bin 29 Jahre alt und komme aus Nittenau, Bayern. Nach zwei Jahren als Elektrotechniker und
+                        SPS-Programmierer habe ich mich entschieden, den Wechsel in die Softwareentwicklung zu wagen, um
+                        meiner Leidenschaft fürs Programmieren nachzugehen. Als Junior Backend-Entwickler strebe ich
+                        meinen ersten Job in diesem Bereich an. Besonders begeistert mich die Backend-Entwicklung, da
+                        sie mir die Möglichkeit gibt, komplexe logische Probleme zu lösen und Systeme zu schaffen, die
+                        effizient und skalierbar sind.
+                    </p>
+
+                    <h3 class="text-white">Warum Backend?</h3>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">
+                        Backend-Entwicklung fasziniert mich, weil sie eine tiefgehende Auseinandersetzung mit der Logik
+                        hinter Softwarelösungen erfordert. Es gefällt mir, APIs zu entwerfen, Daten zu verwalten und
+                        Systeme so zu gestalten, dass sie sowohl leistungsfähig als auch flexibel bleiben. Die ständige
+                        Herausforderung, komplexe Probleme zu lösen und dabei mit unterschiedlichen Technologien zu
+                        arbeiten, motiviert mich, mich kontinuierlich weiterzuentwickeln.
+                    </p>
+
+                    <h3 class="text-white">Meine Stärken</h3>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">
+                        Ich bin stets lernbereit und strebe danach, mein Wissen und meine Fähigkeiten ständig zu
+                        erweitern. Dabei zeichnet mich eine starke Problemlösungsorientierung aus – ich gebe nicht auf
+                        und finde Wege, auch schwierige Aufgaben zu meistern. Mein strukturiertes und modulares Vorgehen
+                        sorgt dafür, dass der von mir geschriebene Code sauber und wartbar bleibt. Zudem zeichnen mich
+                        Durchhaltevermögen und eine hohe Motivation aus, immer die beste Lösung zu finden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="page-section bg-primary" id="skills">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Skills</h2>
+                    <hr class="divider divider-light" />
+
+                    <!-- Programming Languages & Tools -->
+                    <div class="subheading mb-4 text-black fw-bold text-uppercase">Programming Languages & Tools</div>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 align-items-center">
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Python_Icon.svg') }}" alt="Python" class="me-2" style="width: 40px;">
+                            Python
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Django_Icon.svg') }}" alt="Django" class="me-2" style="width: 40px;">
+                            Django
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Flask_Icon.svg') }}" alt="Flask" class="me-2" style="width: 40px;"> Flask
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Postgres_Icon.webp') }}" alt="PostgreSQL" class="me-2"
+                                style="width: 40px;"> PostgreSQL
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Sqllite_Icon.png') }}" alt="SQLite" class="me-2" style="width: 40px;">
+                            SQLite
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/Git_Icon.png') }}" alt="Git" class="me-2" style="width: 40px;"> Git
+                        </span>
+                        <span class="badge bg-light text-dark fs-4 p-3 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/GitHub_Icon.png') }}" alt="GitHub" class="me-2" style="width: 40px;">
+                            GitHub
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 p-2 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/HTML_Icon_Black.webp') }}" alt="HTML" class="me-2" style="width: 30px;">
+                            HTML
+                        </span>
+                        <span class="badge bg-light text-dark fs-6 p-2 d-flex align-items-center">
+                            <img src="{{ url_for('static', filename='assets/Icons/CSS_Icon.webp') }}" alt="CSS" class="me-2" style="width: 30px;"> CSS
+                        </span>
+                    </div>
+
+                    <br>
+
+                    <!-- Frameworks & Technologies -->
+                    <div class="subheading mb-4 text-black fw-bold text-uppercase">Frameworks & Technologies</div>
+                    <ul class="fa-ul mb-4 text-white text-start mx-auto" style="max-width: 600px;">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Flask (Full-Stack mit Backend und
+                            einfachem Frontend)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Django (RESTful APIs, JWT,
+                            Passwort-Hashing)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> PostgreSQL, SQLite und ORM
+                            (SQLAlchemy) für Datenbanken</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Swagger zur API-Dokumentation</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Testing mit pytest in Python</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Deployment auf Render (Webserver und
+                            Datenbank)</li>
+                    </ul>
+
+                    <br>
+
+                    <!-- Additional Skills -->
+                    <div class="subheading mb-4 text-black fw-bold text-uppercase">Additional Skills</div>
+                    <ul class="fa-ul mb-0 text-white text-start mx-auto" style="max-width: 600px;">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> HTML und CSS für einfache Webseiten
+                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Grundkenntnisse in JavaScript
+                            (Syntax und kleine Änderungen)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span> Git und GitHub für Versionskontrolle
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio-->
+    <div id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <!-- Custom PC Webshop Backend API-->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/django_pc_webshop_api.PNG') }}"
+                            alt="django_pc_webshop_api_Picture" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Backend API</div>
+                            <div class="project-name">Custom PC Webshop</div>
+                            <div class="tech-stack-icons">
+                                <img src="{{ url_for('static', filename='assets/Icons/Python_Icon.svg') }}" alt="Python">
+                                <img src="{{ url_for('static', filename='assets/Icons/Django_Icon.svg') }}" alt="Django">
+                                <img src="{{ url_for('static', filename='assets/Icons/Database_Icon.svg') }}" alt="Datenbank">
+                                <img src="{{ url_for('static', filename='assets/Icons/Postgres_Icon.webp') }}" alt="PostgreSQL">
+                                <img src="{{ url_for('static', filename='assets/Icons/Git_Icon.png') }}" alt="Git">
+                                <img src="{{ url_for('static', filename='assets/Icons/GitHub_Icon.png') }}" alt="Git-Hub"
+                                    style="width: 80px; height: auto;">
+                            </div>
+                            <a href="https://github.com/Darkchanze/django_pc_webshop_api" target="_blank"
+                                style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/Movie_Project_3.PNG') }}" alt="Movie_Project_Picture" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Full-Stack Application</div>
+                            <div class="project-name">Movie Project</div>
+                            <div class="tech-stack-icons">
+                                <img src="{{ url_for('static', filename='assets/Icons/Python_Icon.svg') }}" alt="Python">
+                                <img src="{{ url_for('static', filename='assets/Icons/Flask_Icon.svg') }}" alt="Flask">
+                                <img src="{{ url_for('static', filename='assets/Icons/Database_Icon.svg') }}" alt="Datenbank">
+                                <img src="{{ url_for('static', filename='assets/Icons/Sqllite_Icon.png') }}" alt="SQLite">
+                                <img src="{{ url_for('static', filename='assets/Icons/HTML_Icon_Black.webp') }}" alt="HTML">
+                                <img src="{{ url_for('static', filename='assets/Icons/CSS_Icon.webp') }}" alt="CSS">
+                                <img src="{{ url_for('static', filename='assets/Icons/Git_Icon.png') }}" alt="Git">
+                                <img src="{{ url_for('static', filename='assets/Icons/GitHub_Icon.png') }}" alt="Git-Hub"
+                                    style="width: 80px; height: auto;">
+                            </div>
+                            <a href="https://github.com/Darkchanze/django_pc_webshop_api" target="_blank"
+                                style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/thumbnails/1.jpg') }}" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Noch nichts</div>
+                            <div class="project-name">Noch nichts</div>
+                            <a href="https://github.com/Darkchanze/django_pc_webshop_api" target="_blank"
+                                style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Lassen Sie uns in Kontakt treten!</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Sie suchen einen motivierten Junior Backend-Entwickler? <br>
+                    Schreiben Sie mir eine Nachricht – ich freue mich auf den Austausch!</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-5">
+
+                <form id="contactForm" method="POST" action="{{ url_for('kontakt') }}">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" name="name" type="text"
+                            placeholder="Geben Sie Ihren Namen ein..." required />
+                        <label for="name">Vollständiger Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Ein Name ist erforderlich.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" name="email" type="email"
+                            placeholder="name@example.com" required />
+                        <label for="email">E-Mail-Adresse</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Eine E-Mail-Adresse ist erforderlich.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Die E-Mail-Adresse ist nicht gültig.</div>
+                    </div>
+                    <!-- Phone number input (optional) -->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" name="phone" type="tel"
+                            placeholder="(123) 456-7890" />
+                        <label for="phone">Telefonnummer (optional)</label>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" name="message" placeholder="Geben Sie hier Ihre Nachricht ein..." style="height: 7rem" required></textarea>
+                        <label for="message">Nachricht</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Eine Nachricht ist erforderlich.</div>
+                    </div>
+                    
+                    <!-- Flash-Meldungen von Flask -->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                      {% if messages %}
+                        {% for category, message in messages %}
+                          <div class="alert {% if category == 'error' %}alert-danger{% else %}alert-success{% endif %} text-center mb-3">
+                            {{ message }}
+                          </div>
+                        {% endfor %}
+                      {% endif %}
+                    {% endwith %}
+                    
+                    <!-- Submit Button-->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Absenden</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <div class="d-flex justify-content-center align-items-center gap-4">
+                    <div class="social-icons d-flex gap-3">
+                        <a class="social-icon" href="https://www.linkedin.com/in/nico-wittemann-8b5737357/"
+                            target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="social-icon" href="https://github.com/Darkchanze" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-muted" style="margin-left: 17px;">
+                        <i class="bi-phone fs-4"></i>
+                        <span>+49 (162) 2340407</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="bg-light py-5">
+    <div class="container px-4 px-lg-5">
+        <div class="small text-center text-muted">© 2025 - Nico Wittemann</div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SimpleLightbox plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<!-- Core theme JS-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<!-- SB Forms deaktivieren -->
+<!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+
+</html>
