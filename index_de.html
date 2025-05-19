@@ -265,105 +265,46 @@
             </div>
         </div>
     </div>
-    <!-- Contact-->
+    <!-- Contact -->
     <section class="page-section" id="contact">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Lassen Sie uns in Kontakt treten!</h2>
+                    <h2 class="mt-0">Lass uns in Kontakt treten!</h2>
                     <hr class="divider" />
-                    <p class="text-muted mb-5">Sie suchen einen motivierten Junior Backend-Entwickler? <br>
-                        Schreiben Sie mir eine Nachricht – ich freue mich auf den Austausch!</p>
+                    <p class="text-muted mb-5">
+                        Sie suchen einen motivierten Junior Backend-Entwickler?<br>
+                        Schreiben Sie mir eine Nachricht – ich freue mich auf den Austausch!
+                    </p>
                 </div>
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-5">
-                    <!-- Reduced width -->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/xvgayael">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Geben Sie Ihren Namen ein..."
-                                data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Ihr Name..."
+                                required />
                             <label for="name">Vollständiger Name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Ein Name ist erforderlich.
-                            </div>
                         </div>
-                        <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email"
+                                placeholder="name@example.com" required />
                             <label for="email">E-Mail-Adresse</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">Eine E-Mail-Adresse ist
-                                erforderlich..</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Die E-Mail-Adresse ist nicht
-                                gültig.</div>
                         </div>
-                        <!-- Phone number input (optional) -->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                            <input class="form-control" id="phone" name="phone" type="tel"
+                                placeholder="(0123) 456-7890" />
                             <label for="phone">Telefonnummer (optional)</label>
                         </div>
-                        <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Geben Sie hier Ihre Nachricht ein..." style="height: 7rem"
-                                data-sb-validations="required"></textarea> <!-- Reduced height -->
+                            <textarea class="form-control" id="message" name="message" placeholder="Ihre Nachricht..."
+                                style="height: 7rem" required></textarea>
                             <label for="message">Nachricht</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">Eine Nachricht ist
-                                erforderlich.
-                            </div>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-xl" type="submit">Absenden</button>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Fehler beim Senden der Nachricht!</div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                                type="submit">Absenden</button></div>
                     </form>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <div class="d-flex justify-content-center align-items-center gap-4">
-                        <!-- Flex-Container -->
-                        <div class="social-icons d-flex gap-3">
-                            <a class="social-icon" href="https://www.linkedin.com/in/nico-wittemann-8b5737357/"
-                                target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="social-icon" href="https://github.com/Darkchanze" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="d-flex align-items-center gap-2 text-muted" style="margin-left: 17px;">
-                            <i class="bi-phone fs-4"></i>
-                            <span>+49 (162) 2340407</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
