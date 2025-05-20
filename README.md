@@ -7,8 +7,8 @@ I’m Nico Wittemann, a junior backend developer with a strong focus on Python, 
 ## 🌐 Live Version
 👉 [View Portfolio](https://nico-wittemann.github.io/personal-portfolio/) *(optional if hosted online)*
 
-## 📸 Screenshot
-![Screenshot of the portfolio](assets/img/django_pc_webshop_api.PNG)
+## 📸 Project Preview
+![Django Webshop API](assets/img/PC_Webshop.PNG)
 
 ---
 
