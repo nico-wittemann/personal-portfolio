@@ -50,15 +50,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Language Switcher
   const languageSwitcher = document.getElementById("languageSwitcher");
   if (languageSwitcher) {
-    languageSwitcher.addEventListener("change", function () {
-      const selectedLang = languageSwitcher.value;
-      const currentPath = window.location.pathname;
+    const currentFile = window.location.href.includes("index_de")
+      ? "index_de.html"
+      : "index.html";
+    languageSwitcher.value = currentFile;
 
-      if (selectedLang === "en" && !currentPath.includes("/en/")) {
-        window.location.href = "/en/index.html";
-      } else if (selectedLang === "de" && currentPath.includes("/en/")) {
-        window.location.href = "/index.html";
+    languageSwitcher.addEventListener("change", function () {
+      const selected = this.value;
+      if (selected !== currentFile) {
+        window.location.href = selected;
       }
     });
   }
+
+  // Fix for portfolio hover content visibility
+  document.querySelectorAll(".portfolio-box").forEach((box) => {
+    box.addEventListener("mouseenter", () => {
+      box.classList.add("hover");
+    });
+    box.addEventListener("mouseleave", () => {
+      box.classList.remove("hover");
+    });
+  });
 });
