@@ -5,7 +5,7 @@ Welcome to my personal portfolio! 🚀
 I’m Nico Wittemann, a junior backend developer with a strong focus on Python, Django, and relational databases. This portfolio showcases my projects, my tech stack, and my professional background.
 
 ## 🌐 Live Version
-👉 [View Portfolio](https://your-domain.com) *(optional if hosted online)*
+👉 [View Portfolio](https://nico-wittemann.github.io/personal-portfolio/) *(optional if hosted online)*
 
 ## 📸 Screenshot
 ![Screenshot of the portfolio](assets/img/django_pc_webshop_api.PNG)
@@ -19,9 +19,9 @@ After graduating in electrical engineering and working two years as a PLC progra
 
 ### ⚙️ Tech Stack
 - **Languages:** Python, HTML, CSS, JavaScript (basics)
-- **Frameworks:** Django, Flask
+- **Frameworks & Technologies:** Django, Flask, RESTful APIs, SQLAlchemy ORM, Raw SQL, Swagger, Postman
 - **Databases:** PostgreSQL, SQLite
-- **Tools:** Git, GitHub, Swagger, pytest
+- **Tools:** Git, GitHub, pytest
 - **Deployment:** Render
 
 ### 🛠️ Projects in the Portfolio
@@ -30,9 +30,6 @@ After graduating in electrical engineering and working two years as a PLC progra
 
 ### 📬 Contact Form
 Includes a ready-to-use contact form via Formspree – great for employers or recruiters.
-
-### 🌍 Language Switcher
-The site is available in both **English and German**. Visitors can switch languages via a dropdown menu.
 
 ---
 
@@ -45,8 +42,8 @@ The site is available in both **English and German**. Visitors can switch langua
 │   └── styles.css            # Custom styles
 ├── js/
 │   └── scripts.js            # Bootstrap & custom JavaScript
-├── index.html                # English version
-├── index_de.html             # German version
+├── index.html                # Main version (English)
+├── index_de.html             # German version (optional)
 └── README.md
 ```
 
@@ -61,7 +58,7 @@ If you're looking for a motivated junior backend developer who’s eager to lear
 
 ---
 
-## 📝 License
+## 📍 License
 This project uses the [Creative theme by Start Bootstrap](https://startbootstrap.com/theme/creative) – MIT licensed.
 
 ---
